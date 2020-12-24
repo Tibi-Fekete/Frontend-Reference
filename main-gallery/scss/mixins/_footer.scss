@@ -1,0 +1,29 @@
+@mixin footer {
+    background-image: url(https://images.unsplash.com/photo-1605629030574-a476fe5a66d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    width: 100%;
+    min-height: 150px;
+    color: whitesmoke;
+    padding: 20px;
+
+    .footer-text-holder {
+        margin: 1.5rem;
+        ul {
+            list-style-type: none;
+            line-height: 30px;
+        }
+    }
+
+    .footer-icons-holder{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        @media only screen and (min-width:768px){
+            justify-content: center;
+            i {
+                margin: 0 1rem 0 1rem;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,150 @@
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* ---------- HEADER ------------- */
+header {
+  color: whitesmoke;
+  background-image: url(https://images.unsplash.com/photo-1605629030574-a476fe5a66d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+  width: 100%;
+  min-height: 150px;
+  padding: 1px;
+}
+header .navbar-toggler {
+  border: none;
+}
+header a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+header a:hover {
+  color: lightgrey;
+}
+header hr {
+  width: 80%;
+  margin: 0 auto;
+}
+header .nav-text {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav-text-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+header .nav-text p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* ------------- MAIN -------------*/
+main .img-holder {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px, auto);
+  gap: 1%;
+  margin-bottom: 150px;
+}
+@media only screen and (min-width: 768px) {
+  main .img-holder {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    margin-bottom: 80px;
+  }
+}
+main .img-holder article {
+  width: 100%;
+  position: relative;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+main .img-holder article img {
+  width: 100%;
+  height: 100%;
+}
+main .img-holder article .title-holder {
+  width: 60%;
+  min-height: 60px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%);
+}
+main .img-holder article .title-holder h2 {
+  color: #e6e6e6;
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+  main .img-holder article .title-holder h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .img-holder article .title-holder h2 {
+    font-size: 2.5rem;
+  }
+}
+main .text-holder h2 {
+  margin-bottom: 0;
+}
+main .text-holder small {
+  color: rgba(0, 0, 0, 0.6);
+}
+main .text-holder ul {
+  list-style-type: square;
+}
+
+/* ----------- FOOTER ------------*/
+footer {
+  background-image: url(https://images.unsplash.com/photo-1605629030574-a476fe5a66d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+  width: 100%;
+  min-height: 150px;
+  color: whitesmoke;
+  padding: 20px;
+}
+footer .footer-text-holder {
+  margin: 1.5rem;
+}
+footer .footer-text-holder ul {
+  list-style-type: none;
+  line-height: 30px;
+}
+footer .footer-icons-holder {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-icons-holder {
+    justify-content: center;
+  }
+  footer .footer-icons-holder i {
+    margin: 0 1rem 0 1rem;
+  }
+}
+footer small {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=services-style.css.map */

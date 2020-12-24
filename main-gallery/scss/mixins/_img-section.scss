@@ -1,0 +1,81 @@
+@use '../mixins/mixins' as m;
+
+@mixin img-section {
+    @include m.set-display-grid;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: 768px){
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        margin: 3% auto;
+    }
+
+    article {
+        width: 100%;
+        min-height: 200px;
+        box-shadow: s.$box-shadow;
+
+        @media only screen and (min-width: 530px){
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media only screen and (min-width: 768px){
+            display: flex;
+            flex-direction: column;
+
+        }
+        
+
+        .img-holder{
+            width: 100%;
+            position: relative;
+            
+            h2 {
+                position: absolute;
+                color: whitesmoke;
+                bottom: 12%;
+                left: 50%;
+                transform: translate(-50%);
+                font-size: 40px;
+            }
+            img{
+                width: 100%;
+                padding: 1rem;
+            }
+
+            @media only screen and (min-width: 530px){
+                flex: 50%;
+                img {
+                    padding: 0.5rem;
+                }
+            }
+
+            @media only screen and (min-width: 768px){
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .text-holder {
+            text-align: center;
+
+            @media only screen and (min-width: 530px){
+                flex: 50%;
+                align-self: center;
+            }
+
+        }
+    }
+    article:nth-child(2){
+        @media only screen and (min-width: 530px){
+            flex-direction: row-reverse;
+        }
+
+        @media only screen and (min-width: 768px){
+            flex-direction: column;
+        }
+
+    }
+}

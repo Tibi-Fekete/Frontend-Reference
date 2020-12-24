@@ -1,0 +1,285 @@
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  color: whitesmoke;
+  background-image: url(https://images.unsplash.com/photo-1605629030574-a476fe5a66d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+  width: 100%;
+  min-height: 150px;
+  padding: 1px;
+}
+header .navbar-toggler {
+  border: none;
+}
+header a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+header a:hover {
+  color: lightgrey;
+}
+header hr {
+  width: 80%;
+  margin: 0 auto;
+}
+header .nav-text {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav-text-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+header .nav-text p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* ------------ MAIN ---------------*/
+main {
+  margin-top: 50px;
+  /* ----------- IMG SECTION --------- */
+  /* ----------- STORY SECTION ---------- */
+}
+main .img-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, auto);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  main .img-section {
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    margin: 3% auto;
+  }
+}
+main .img-section article {
+  width: 100%;
+  min-height: 200px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 530px) {
+  main .img-section article {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .img-section article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .img-section article .img-holder {
+  width: 100%;
+  position: relative;
+}
+main .img-section article .img-holder h2 {
+  position: absolute;
+  color: whitesmoke;
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 40px;
+}
+main .img-section article .img-holder img {
+  width: 100%;
+  padding: 1rem;
+}
+@media only screen and (min-width: 530px) {
+  main .img-section article .img-holder {
+    flex: 50%;
+  }
+  main .img-section article .img-holder img {
+    padding: 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .img-section article .img-holder h2 {
+    font-size: 30px;
+  }
+}
+main .img-section article .text-holder {
+  text-align: center;
+}
+@media only screen and (min-width: 530px) {
+  main .img-section article .text-holder {
+    flex: 50%;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 530px) {
+  main .img-section article:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .img-section article:nth-child(2) {
+    flex-direction: column;
+  }
+}
+main .story-section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+main .story-section-title-text {
+  flex: 33%;
+  text-align: center;
+}
+main .story-section .container {
+  background: rgba(189, 189, 192, 0.5);
+  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 530px) {
+  main .story-section .container {
+    background: linear-gradient(90deg, rgba(189, 189, 192, 0.7) 0%, rgba(252, 255, 255, 0.2) 75%);
+  }
+}
+main .story-section-first {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, auto);
+  gap: 10px;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-first {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main .story-section-first-article-headline {
+  grid-row: 1/2;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-first-article-headline {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+  }
+}
+main .story-section-first-article-img-holder {
+  grid-row: 2/3;
+}
+main .story-section-first-article-img-holder img {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-first-article-img-holder {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
+main .story-section-first-article-text-holder {
+  grid-row: 3/4;
+  text-align: justify;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-first-article-text-holder {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 20px;
+  }
+}
+main .story-section-second {
+  margin: 20px 0 40px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, auto);
+  gap: 10px;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-second {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main .story-section-second-article-headline {
+  grid-row: 1/2;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-second-article-headline {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+  }
+}
+main .story-section-second-article-img-holder {
+  grid-row: 2/3;
+}
+main .story-section-second-article-img-holder img {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-second-article-img-holder {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
+main .story-section-second-article-text-holder {
+  grid-row: 3/4;
+  text-align: justify;
+}
+@media only screen and (min-width: 768px) {
+  main .story-section-second-article-text-holder {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 20px;
+  }
+}
+
+/* ----------- FOOTER ------------*/
+footer {
+  background-image: url(https://images.unsplash.com/photo-1605629030574-a476fe5a66d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+  width: 100%;
+  min-height: 150px;
+  color: whitesmoke;
+  padding: 20px;
+}
+footer .footer-text-holder {
+  margin: 1.5rem;
+}
+footer .footer-text-holder ul {
+  list-style-type: none;
+  line-height: 30px;
+}
+footer .footer-icons-holder {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-icons-holder {
+    justify-content: center;
+  }
+  footer .footer-icons-holder i {
+    margin: 0 1rem 0 1rem;
+  }
+}
+footer small {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

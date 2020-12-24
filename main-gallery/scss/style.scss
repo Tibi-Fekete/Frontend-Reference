@@ -1,0 +1,78 @@
+@use '../scss/settings/site-elements' as s;
+
+
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+header {
+    @include s.header;
+}
+
+/* ------------ MAIN ---------------*/ 
+main {
+    margin-top: 50px;
+
+
+/* ----------- IMG SECTION --------- */
+    .img-section {
+        @include s.img-section;
+    }
+
+    
+/* ----------- STORY SECTION ---------- */
+    .story-section {
+        &-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &-text {
+            flex: 33%;
+            text-align: center;
+        }
+        }
+
+        .container {
+            background: rgba(189, 189, 192, 0.5);
+            padding: 10px;
+            @include s.set-margin-top-bottom;
+
+            @media only screen and (min-width: 530px){
+                background: s.$linear-grad;
+            }
+        }
+
+        &-first {
+            margin-top: 40px;
+            @include s.story-article;
+        }
+        
+
+        &-second {
+            margin: 20px 0 40px 0;
+            @include s.story-article;
+        }
+        
+    }
+}
+
+/* ----------- FOOTER ------------*/ 
+
+footer {
+   @include s.footer;
+
+   small {
+       @include s.set-margin-top-bottom(0.8rem);
+       display: block;
+       text-align: center;
+   }
+}

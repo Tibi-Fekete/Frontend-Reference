@@ -1,0 +1,45 @@
+@use '../mixins/mixins' as m;
+
+
+@mixin story-article {
+    @include m.set-display-grid;
+    gap: 10px;
+
+    @media only screen and (min-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    &-article-headline {
+        grid-row: 1/2;
+        text-align: center;
+
+        @media only screen and (min-width: 768px){
+            grid-column: 1/2;
+            grid-row: 1/2;
+            text-align: left;
+        }
+    }
+
+    &-article-img-holder {
+        grid-row: 2/3;
+        img {
+            width: 100%;
+        }
+        @media only screen and (min-width: 768px){
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+    }
+
+
+    &-article-text-holder {
+        grid-row: 3/4;
+        text-align: justify;
+        @media only screen and (min-width: 768px){
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding-right: 20px;
+        }
+    }
+}

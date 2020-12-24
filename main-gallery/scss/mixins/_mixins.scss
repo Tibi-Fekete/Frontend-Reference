@@ -1,0 +1,11 @@
+@mixin set-margin-top-bottom($value: 2rem) {
+    margin-top: $value;
+    margin-bottom: $value;
+}
+
+
+@mixin set-display-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+}
