@@ -1,0 +1,48 @@
+body {
+    margin: 0;   
+}
+
+
+.form-container {
+    width: 100%;
+    margin: 5% auto;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    background: #effad3;
+    color: teal;
+    text-align: center;
+    padding: 2rem;
+}
+
+input, label, small {
+    display: block;
+    margin: 2% auto;
+
+} 
+
+small {
+    color: red;
+    display: none;
+}
+
+input {
+    margin: 0 auto;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 0.7rem;
+    background: teal;
+    color: whitesmoke;
+    margin: 5% auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .form-container {
+        width: 70%;
+    }
+}

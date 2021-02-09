@@ -1,0 +1,122 @@
+/* --------- HEADER ----------- */
+
+
+
+header {
+    width: 100%;
+    min-height: 70px;
+    background: #effad3;
+    position: relative;
+}
+
+header nav {
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+}
+
+header nav a {
+    text-decoration: none;
+    color: teal;
+    font-size: 1.3rem;
+    padding: 0 5px 0 5px;
+}
+
+header nav a:hover {
+    color: white;
+    background: teal;
+}
+
+.header-bg {
+    display: none;
+    background-image: url("../img/header-cover.jpg");
+    min-height: 250px;
+    position: relative;
+}
+
+.header-title {
+    color: whitesmoke;
+    width: 45%;
+    min-height: 120px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    transform: translate(-1%, -5%);
+}
+
+.header-title h1 {
+    font-size: 1.8rem;
+    padding: 5px 0 10px 0;
+}
+
+.header-title h2 {
+    font-size: 1.3rem;
+    padding: 25px 0 0 0;
+}
+
+.menu-ikon-holder {
+    width: 7%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.ikon-holder {
+    width: 50px;
+    display: flex;
+    position: absolute;
+    right: 35%;
+    top: 50%;
+    transform: translate(-35%, -50%);
+
+}
+
+.ikon-holder img {
+    width: 90%;
+    margin: 10px;
+}
+
+#like {
+    border-radius: 50%;
+    border: 1px solid blue;
+    padding: 2px;
+}
+
+#insta {
+    border-radius: 50%;
+    border: 1px solid purple;
+    padding: 2px;
+}
+
+#mail {
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 2px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .menu-ikon-holder {
+        display: none;
+    }
+
+    header nav {
+        display: inline;
+    }
+
+    .ikon-holder {
+        right: 20%;
+        top: 50%;
+        transform: translate(-20%, -50%);
+    
+    }
+
+    .header-bg {
+        display: block;
+    }
+}

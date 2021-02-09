@@ -1,0 +1,73 @@
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* ----------- FONT TYPES ---------- */
+h1, h2, h3 {
+    font-family: 'Nunito', sans-serif;
+}
+
+p, a {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.house-boxes {
+    width: 95%;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.house-boxes article {
+    width: 100%;
+    height: 400px;
+    padding: 1px;
+    margin: 10px 0 0 0;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.text-holder {
+    margin-top: 2.5rem;
+}
+
+.house-boxes article h3 {
+    padding: 5px 0 20px 0; 
+}
+
+.house-img-holder {
+    width: 80%;
+    height: 60%;
+    margin: 1% auto;
+}
+
+.house-img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .house-boxes article{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    .house-boxes article{
+        width: 30%;
+    }
+}

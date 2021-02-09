@@ -1,0 +1,71 @@
+footer {
+    width: 100%;
+    background: teal;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer table {
+    width: 40%;
+    margin: 20px auto;
+    border-bottom: 2px solid whitesmoke;
+}
+
+table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.table-img-holder {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: whitesmoke;
+}
+
+.contact img {
+    width: 30px;
+    margin: 5px 0 0 10px;
+}
+
+footer section:last-child h3 {
+    padding: 10px 0 30px 0;
+}
+
+footer section:last-child p {
+    padding: 0 0 15px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer table {
+        width: 80%;
+        margin: 20px auto;
+        border-bottom: none;
+    }
+    
+    table td {
+        text-align: left;
+        padding: 3px;
+    }
+
+    footer section:last-child h3 {
+        padding: 20px 0 40px 0;
+    }
+    
+    footer section:last-child p {
+        padding: 0 0 30px 0;
+    }
+
+    .contact h3 {
+        padding: 20px 0 0 50px;
+        text-align: left;
+    }
+}
+

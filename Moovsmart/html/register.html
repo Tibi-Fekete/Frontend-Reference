@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register-style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Belépés</a>
+            <a href="#property">Ingatlanok</a>
+            <a href="#info">Kontakt</a>
+            <a href="index.html">Ügyintézés</a>
+        </nav>
+        <div class="menu-ikon-holder">
+            <img src="../img/statistics.svg" alt="statistics-svg">
+        </div>
+        <div class="ikon-holder">
+            <img id="like" src="../img/like.svg" alt="like-svg">
+            <img id="insta" src="../img/instagram.svg" alt="instagram-svg">
+            <img id="mail" src="../img/mail.svg" alt="mail-svg">
+        </div>
+    </header>
+    <div class="header-bg">
+        <div class="header-title">
+            <h1>Moovsmart ingatlanbörze</h1>
+            <h2>Ingatlan keresés forró dróton</h2>
+        </div>
+    </div>
+
+    <main>
+        <section class="form-container">
+            <form action="javascript:void(0)" name="form">
+                <label for="username">Felhasználónév:</label>
+                <input type="text" id="username" name="username">
+                <small class="error-username">Hibás felhasználónév!</small>
+
+                <label for="email">Email cím</label>
+                <input type="email" id="email" name="email">
+                <small class="error-email">Hibás email cím!</small>
+
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="password">
+                <small class="error-password">Hibás jelszó!</small>
+
+                <label for="re-password">Jelszó még egyszer:</label>
+                <input type="password" id="re-password" name="repassword">
+                <small class="error-re-password">Nem egyezik a két jelszó!</small>
+
+                <button type="submit">Elküld</button>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <section class="contact" id="info">
+            <h3>Kapcsolat</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="table-img-holder">
+                            <img src="../img/telephone.svg" alt="phone-svg">
+                        </div>
+                    </td>
+                    <td><p>+36 77777777</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-img-holder">
+                            <img src="../img/mail.svg" alt="mail-svg">
+                        </div>
+                    </td>
+                    <td> <p>moovsmart@mail.hu</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-img-holder">
+                            <img src="../img/like.svg" alt="like-svg">
+                        </div>
+                    </td>
+                    <td> <p>facebook</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-img-holder">
+                            <img src="../img/house.svg" alt="house-svg">
+                        </div>
+                    </td>
+                    <td><p>1098 Budapest Halom u. 99</p></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Adatvédelem és céges infó</h3>
+            <p>Elolvasom az adatvédelmi szabályzatot</p>
+            <p>Céges információ</p>
+        </section>
+    </footer>
+
+
+<script src="../js/validator.js"></script>
+</body>
+</html>
